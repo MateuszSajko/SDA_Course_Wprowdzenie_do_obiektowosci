@@ -4,13 +4,20 @@ public class Kalkulator {
    3. Odejmowanie
 
  */
-        public int add(int a, int b) {
-                int c;
-                c = a + b;
-                return c;
-
-
+        public double add(double a, double b) {
+                return a+b;
         }
+        public double sub (double a, double b) {
+                return a-b;
+        }
+        public double multi (double a, double b){
+                return a*b;
+        }
+
+        public double div (double a, double b){
+                return a/b;
+        }
+
 
 
         }
