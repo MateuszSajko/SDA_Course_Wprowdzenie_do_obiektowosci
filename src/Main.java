@@ -41,7 +41,7 @@ public class Main {
         Kalkulator op1 = new Kalkulator();
         System.out.println( op1.add(5,7));
         System.out.println( op1.sub );
-      */
+
         Kalkulator calc = new Kalkulator();
 
         System.out.println("wprowadz pierwsza liczbe");
@@ -52,6 +52,28 @@ public class Main {
         System.out.println("Twoj wynik roznicy to " + calc.sub(liczba1,liczba2));
         System.out.println("Twoj wynik mnozenia to " + calc.multi(liczba1,liczba2));
         System.out.println("Twoj wynik dzielenia to " + calc.div(liczba1,liczba2));
+        */
+        Kalkulator calc = new Kalkulator();
+        System.out.println("wprowadz pierwsza liczbe");
+        double liczba1 = scanner.nextDouble();
+        System.out.println("Wprowadz druga liczbe");
+        double liczba2 = scanner.nextDouble();
+        System.out.println("Wprowadz zadana operacje. 1 - dodawanie, 2- odejmowanie, 3- mnozenie, 4- dzielenie");
+        int x = scanner.nextInt();
+        switch (x) {
+            case 1:
+                System.out.println(calc.add(liczba1, liczba2));
+                break;
+            case 2:
+                System.out.println(calc.sub(liczba1, liczba2));
+                break;
+            case 3:
+                System.out.println(calc.multi(liczba1, liczba2));
+                break;
+            case 4:
+                System.out.println(calc.div(liczba1, liczba2));
+                break;
 
+        }
     }
 }
